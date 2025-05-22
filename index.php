@@ -43,7 +43,7 @@
 
         <input type="submit" class="submit-btn" value="Apply">
 
-        <p><a href="login.php">Already have an account?</a></p>
+        <p><a href="login/login-page.php">Already have an account?</a></p>
     </form>
 </body>
 </html>

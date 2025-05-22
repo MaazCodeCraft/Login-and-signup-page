@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
+    <link rel="stylesheet" href="login-style.css">
 </head>
 <body>
 
@@ -16,7 +17,7 @@
         <input type="password" id="pass" name="pass" required>
 
         <input type="submit" class="submit-btn" value="Apply">
-        <p><a href="signup.php">Click For Signup</a></p>
+        <p><a href="../index.php">Click For Signup</a></p>
     </form>
 </body>
 </html>
