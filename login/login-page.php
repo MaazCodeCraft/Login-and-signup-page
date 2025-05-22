@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <form class="form-container" method="post" action="">
+    <form class="form-container" method="post" action="login-php-code.php">
         <h1>Login Form</h1>
 
         <label for="email">Email Address</label>
