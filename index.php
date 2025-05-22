@@ -42,6 +42,8 @@
         <textarea id="address" name="address" placeholder="Enter your address..."></textarea>
 
         <input type="submit" class="submit-btn" value="Apply">
+
+        <p><a href="login.php">Already have an account?</a></p>
     </form>
 </body>
 </html>
