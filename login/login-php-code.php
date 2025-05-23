@@ -18,8 +18,8 @@ $result = $connection->query($sql);
 // print_r (result);
 
 if ($result->num_rows > 0) {
-   echo "successful";
+    header("Location: http://127.0.0.1/profilepage/profile/profile.php");
 } else {
-    echo "Invalid";
+    header("Location: http://127.0.0.1/profilepage/login/login-page.php.?error=1");
 }
 ?>

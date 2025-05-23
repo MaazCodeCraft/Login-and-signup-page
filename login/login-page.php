@@ -10,6 +10,13 @@
     <form class="form-container" method="post" action="login-php-code.php">
         <h1>Login Form</h1>
 
+        <?php if (isset($_GET["error"])): ?>
+            <?php $errorCode = $_GET["error"];?>
+            <?php if($errorCode):?>
+                <h4 style = "color: red">Invalid username or password</h4>
+            <?php endif;?>
+        <?php endif;?>
+
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" required>
 
