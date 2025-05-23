@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+    if (isset($_SESSION["user-logged-in"]) && $_SESSION["user-logged-in"] == "yes"){
+        header("Location: http://127.0.0.1/profilepage/profile/profile-page.php");
+        return 0;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
