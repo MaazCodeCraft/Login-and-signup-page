@@ -22,9 +22,13 @@ if ($result->num_rows > 0) {
     $_SESSION["user-logged-in"] = "yes";
 
     while($row = $result->fetch_assoc()){
-        // dumb_var($row);
-        $_SESSION["user-name"] = $row["email"];
         $_SESSION["user-id"] = $row["ID"];
+        $_SESSION["user-name"] = $row["fullName"];
+        $_SESSION["user-email"] = $row["email"];
+        $_SESSION["user-gender"] = $row["gender"];
+        $_SESSION["user-dob"] = $row["dateOfBirth"]; 
+        $_SESSION["user-address"] = $row["address"]; 
+        $_SESSION["user-dept"] = $row["department"]; 
     }
     header("Location: http://127.0.0.1/profilepage/profile/profile-page.php");
     // echo "done";
