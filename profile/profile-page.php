@@ -11,7 +11,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #e8f0f9;
+            background: #121212;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
         }
@@ -19,17 +20,29 @@
         .container {
             max-width: 900px;
             margin: 60px auto;
-            background: white;
+            background: #1e1e1e;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
-            color: #2c3e50;
+            color: #ffffff;
             margin-bottom: 30px;
-            border-bottom: 3px solid #3498db;
+            border-bottom: 2px solid #333;
             padding-bottom: 10px;
+        }
+
+        .profile-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid #00bcd4;
         }
 
         .details {
@@ -39,36 +52,47 @@
         }
 
         .detail-card {
-            background: #f9fbfd;
-            border-left: 5px solid #3498db;
+            background: #2a2a2a;
+            border-left: 5px solid #00bcd4;
             padding: 15px 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         .label {
             font-weight: bold;
-            color: #555;
+            color: #90caf9;
         }
 
         .value {
-            color: #333;
+            color: #e0e0e0;
             margin-top: 5px;
         }
 
         .btn-back {
             display: inline-block;
             margin-top: 40px;
-            background: #3498db;
-            color: white;
+            background: #00bcd4;
+            color: #121212;
             padding: 12px 25px;
             border-radius: 8px;
             text-decoration: none;
             transition: background 0.3s ease;
+            font-weight: bold;
         }
 
         .btn-back:hover {
-            background: #2c80b4;
+            background: #0097a7;
+            color: #ffffff;
+        }
+
+        a {
+            color: #03a9f4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -119,7 +143,7 @@
             </div>
         </div>
 
-        <a class="btn-back" href="/profilepage/logout/logout.php">← Back to Logout</a>
+        <a class="btn-back" href="/profilepage/logout/logout.php">← Logout</a>
     </div>
 </body>
 </html>
