@@ -31,7 +31,15 @@
         <label for="pass">Password</label>
         <input type="password" id="pass" name="pass" required>
 
+        
+        <label for="remember_me">
+            <input type="checkbox" name="remember_me" id="remember_me">Remember Me
+        </label>
+
         <input type="submit" class="submit-btn" value="Apply">
+
+        <input type="reset" class="reset-btn" value="Reset">
+
         <p><a href="../index.php">Click For Signup</a></p>
     </form>
 </body>

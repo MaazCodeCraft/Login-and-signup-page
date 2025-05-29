@@ -1,8 +1,25 @@
 <?php 
     session_start();
-    if ($_SESSION["user-logged-in"] != "yes"){
-        header("Location: http://127.0.0.1/profilepage/login/login-page.php");
-        return 0;
+        if(!isset($_SESSION["user-logged-in"]) || $_SESSION["user-logged-in"] != "yes"){
+            if($_COOKIE["remember_me_key"]){
+                $host = "127.0.0.1";
+                $username = "root";
+                $password = "Pak@1947";
+                $database = "ProfileLogin";
+
+                $connection = new mysqli($host, $username, $password, $database);
+
+                $cookie_value = $_COOKIE["remember_me_key"];
+                $query = "SELECT * FROM Users WHERE remember_login_key = '$cookie_value'";
+
+                $db_response = $connection->query($query);
+                while($row = $db_response->fetch_assoc()){
+                $_SESSION["user-id"] = $user_id = $row["ID"];
+                $_SESSION["user-name"] = $row["fullName"];
+            }
+        }else{
+            header("Location: http://127.0.0.1/profilepage/login/login-page.php");
+        }
     }
 ?>
 
