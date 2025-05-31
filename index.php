@@ -39,7 +39,7 @@
         <input type="file" id="profile_picture" name="profile_picture" accept="image/*">
 
         <label for="address">Address</label>
-        <textarea id="address" name="address" placeholder="Enter your address..."></textarea>
+        <textarea id="address" name="address" placeholder="Enter your address..." required></textarea>
 
         <input type="submit" class="submit-btn" value="Apply">
 
